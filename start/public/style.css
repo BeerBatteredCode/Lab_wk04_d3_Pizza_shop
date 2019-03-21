@@ -5,8 +5,6 @@
 /* Layout view style */
 body {
   background-color: rgba(94, 190, 194, 0.5);
-  /* background-image: url('./img/pizza-logo.png'); */
-  /* background: rgba(94, 190, 194, 0.5) url('./img/pizza-logo.png') no-repeat center; */
 }
 
 nav {
@@ -74,6 +72,7 @@ a:hover {
 
 
 .detailbox {
+  background-image: linear-gradient(to right top, #50a5df, #48b0db, #50b9d3);
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   display: inline;
@@ -109,12 +108,15 @@ form {
   justify-content: center;
   align-items: center;
 }
-form > label {
+label {
   font-family: 'Open Sans', sans-serif;
   color: #00363B;
   float: left;
+  text-align: left;
 }
 input[type=text], select {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
   width: 25%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -125,16 +127,20 @@ input[type=text], select {
 }
 
 input[type=submit] {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
   background-color: #00363B;
   color: #fff;
   width: 25%;
-  padding: 5px 10px;
+  padding: 10px 10px;
   margin: 8px 0;
   border: none;
   border-radius: 4px;
 }
 
 input[type=number] {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
   width: 25%;
   padding: 5px 10px;
   margin: 8px 0;
@@ -184,6 +190,7 @@ input[type=number] {
 }
 
 .showbox {
+  background-image: linear-gradient(to right top, #50a5df, #48b0db, #50b9d3);
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   display: inline-flex;
@@ -241,6 +248,7 @@ input[type=number] {
 }
 
 .updatebox {
+  background-image: linear-gradient(to right top, rgba(80, 165, 223, 0.5), rgba(72, 176, 219, 0.5), rgba(80, 185, 211, 0.5));
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   display: inline-flex;
@@ -249,4 +257,16 @@ input[type=number] {
   box-sizing: border-box;
   border: 2px solid #00363B;
   width: 25%;
+}
+
+/* footer style */
+.darker {
+  font-family: 'Open Sans', sans-serif;
+  position: fixed;
+  bottom: 0;
+  display: inline-flex;
+  justify-content: center;
+  padding: 15px;
+  background-color: #96B0B7;
+  width: 100%;
 }
