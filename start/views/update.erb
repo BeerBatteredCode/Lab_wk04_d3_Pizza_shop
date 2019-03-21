@@ -1,5 +1,8 @@
-<p>Order succesfully updated!</p>
-
-<p> Full name: <%= @order.pretty_name %> </p>
-<p> Topping: <%= @order.topping %> </p>
-<p> Quantity: <%= @order.quantity %> </p>
+<div class="update">
+  <p>Order succesfully updated!</p>
+  <div class="updatebox">
+    <p> Full name: <%= @order.pretty_name %> </p>
+    <p> Topping: <%= @order.topping.capitalize %> </p>
+    <p> Quantity: <%= @order.quantity %> </p>
+  </div>
+</div>

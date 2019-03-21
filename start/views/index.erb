@@ -1,7 +1,14 @@
-<p> ALL THE PIZZAS! </p>
+<div class="index">
+  <p> ALL THE PIZZAS! </p>
 
-<% for order in @orders %>
-  <p> <%= order.pretty_name %> </p>
-  <p> Order: <%= order.topping %> x <%= order.quantity %></p>
-  <a href="/pizza-orders/<%= order.id %>"> Show More </a>
-<% end %>
+<div class="details">
+  <% for order in @orders %>
+  <div class="detailbox">
+    <p> Full Name: <%= order.pretty_name %> </p>
+    <p> Order: <%= order.topping.capitalize %> x <%= order.quantity %></p>
+    <a href="/pizza-orders/<%= order.id %>"> Show More </a>
+  </div>
+  <% end %>
+</div>
+
+</div>

@@ -1,21 +1,26 @@
-<p> EMPTY ORDER FORM: </p>
-<form action="/pizza-orders" method="post">
-  <label for="first-name">First Name:</label>
-  <input type="text" name="first_name" id="first-name"/>
+<div id="new">
+  <p> EMPTY ORDER FORM: </p>
+  
+  <div class="form">
+    <form action="/pizza-orders" method="post">
+      <label for="first-name">First Name:</label>
+      <input type="text" name="first_name" id="first-name"/>
 
-  <label for="last-name">Last Name:</label>
-  <input type="text" name="last_name" id="last-name"/>
+      <label for="last-name">Last Name:</label>
+      <input type="text" name="last_name" id="last-name"/>
 
-  <label for="topping">Topping type:</label>
-  <select class="dropdown" name="topping" id="topping">
-    <option value="pepperoni">Pepperoni</option>
-    <option value="italian-sausage">Italian Sausage</option>
-    <option value="hawaian">Hawaian</option>
-    <option value="veggie">Veggie</option>
-  </select>
+      <label for="topping">Topping type:</label>
+      <select class="dropdown" name="topping" id="topping">
+        <option value="pepperoni">Pepperoni</option>
+        <option value="italian-sausage">Italian Sausage</option>
+        <option value="hawaian">Hawaian</option>
+        <option value="veggie">Veggie</option>
+      </select>
 
-  <label for="quantity">Quantity:</label>
-  <input type="number" name="quantity" id="quantity"/>
+      <label for="quantity">Quantity:</label>
+      <input type="number" name="quantity" id="quantity"/>
 
-  <input type="submit" value="Order Pizza!">
-</form>
+      <input type="submit" value="Order Pizza!">
+    </form>
+  </div>
+</div>
